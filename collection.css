@@ -1,0 +1,88 @@
+* {
+   margin: 0;
+   padding: 0;
+  
+}
+.fullpage {
+height: 100vh;
+width: 100%;
+background-image:url(background.png);
+background-position: center;
+background-size: cover;
+padding-left: 3%;
+padding-right: 3%;
+box-sizing: border-box;
+position: relative;
+}
+
+header {
+    display:flex;
+    width: 100%;
+    height: 16vh;
+    margin: auto;
+    align-items: center;
+    
+}
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+   padding-left: 65px;
+}
+nav ul li{
+   display: inline-flex;
+   margin: 0px 24px;
+   padding: 10px;
+   list-style-type: none;
+}
+nav ul li a {
+   text-decoration: none;
+   color: #333;
+   font-size: 20px;
+}
+nav ul li a:hover{
+   color: #f18b46;
+   cursor: pointer;
+}
+nav ul li a::after {
+   content: '';
+   display: block;
+   width: 0%;
+   height: 2px;
+   background-color:#f18b46 ;
+   transition: width .3s;
+}
+nav ul li a:hover::after{
+   width: 100%;
+   transition: width .3s;
+}
+.cartimg {
+   width:45px;
+   cursor: pointer;
+}
+
+.contentimage {
+   margin-left: 150px;
+   padding: 0;
+   margin-top: 30px;
+   
+}
+.img1, .img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9 {
+   border: 1px solid black;
+   border-radius: 25px;
+   height: 33vh;
+   width: 18%;
+   height: 33vh;
+   margin-left: 5px;
+}
+a img:hover {
+ opacity: 0.5;
+}
+
+.img6 ,.img7,.img8,.img9{
+   
+   margin-top: 30px;
+}
+
